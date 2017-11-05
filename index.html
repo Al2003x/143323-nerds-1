@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -215,7 +218,21 @@
     <span class="visually-hidden">Закрыть</span>
     </button>
     <h2 class="modal-content-title">Напишите нам</h2>
-    <!--  форма  -->
+    <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-action-field">
+        <label class="field-text" for="name">Ваше имя:</label>
+        <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p class="form-action-field">
+        <label class="field-text" for="email">Ваш e-mail:</label>
+        <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа">
+      </p>
+      <p class="form-action-field form-action-field__textarea">
+        <label class="field-text" for="message">Текст письма:</label>
+        <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="btn form-btn" type="submit">Отправить</button>
+    </form>
   </section>
 
 </body>

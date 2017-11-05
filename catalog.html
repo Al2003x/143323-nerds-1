@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +40,67 @@
   <main class="container">
     <section class="catalog-form">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <!--  форма заказа    -->
+      <form class="catalog-form" action="#" method="post">
+        <fieldset class="catalog-form-fieldset catalog-form-fieldset__price">
+          <legend class="catalog-form-inscription catalog-form-inscription__range">Стоимость:</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min">
+            </div>
+            <div class="toggle toggle-max">
+            </div>
+          </div>
+          <div class="price-controls">
+            <label class="price-controls-label price-controls-label__min" for="min">от <input class="price-controls-input" id="min" name="min-price" type="text" value="0"></label>
+            <label class="price-controls-label price-controls-label__max" for="max">до <input class="price-controls-input" id="max" name="max-price" type="text" value="15 000"></label>
+          </div>
+        </fieldset>
+        <fieldset class="catalog-form-fieldset">
+          <legend class="catalog-form-inscription">Сетка:</legend>
+          <ul class="catalog-form-list">
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-radio-input" id="adaptive" type="radio" name="grid" value="adaptive" checked>
+              <label for="adaptive" class="field-radio-label">Адаптивная</label>
+            </li>
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-radio-input" id="fixed" type="radio" name="grid" value="fixed">
+              <label for="fixed" class="field-radio-label">Фиксированная</label>
+            </li>
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-radio-input" id="grid" type="radio" name="grid" value="rubber">
+              <label for="grid" class="field-radio-label">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-form-fieldset">
+          <legend class="catalog-form-inscription">Особенности:</legend>
+          <ul class="catalog-form-list">
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-checkbox-input" id="slider" type="checkbox" name="slider" checked>
+              <label for="slider" class="field-checkbox-label">Слайдер</label>
+            </li>
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-checkbox-input" id="advantage" type="checkbox" name="advantage block">
+              <label for="advantage" class="field-checkbox-label">Блок преимуществ</label>
+            </li>
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-checkbox-input" id="news" type="checkbox" name="news" checked>
+              <label for="news" class="field-checkbox-label">Новости</label>
+            </li>
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-checkbox-input" id="gallery" type="checkbox" name="gallery">
+              <label for="gallery" class="field-checkbox-label">Галерея</label>
+            </li>
+            <li class="catalog-form-item">
+              <input class="visually-hidden field-checkbox-input" id="basket" type="checkbox" name="basket">
+              <label for="basket" class="field-checkbox-label">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="btn field-form-btn" type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <div class="sort-row">
@@ -192,8 +256,23 @@
     <span class="visually-hidden">Закрыть</span>
     </button>
     <h2 class="modal-content-title">Напишите нам</h2>
-    <!--  форма  -->
+    <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-action-field">
+        <label class="field-text" for="name">Ваше имя:</label>
+        <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p class="form-action-field">
+        <label class="field-text" for="email">Ваш e-mail:</label>
+        <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа">
+      </p>
+      <p class="form-action-field form-action-field__textarea">
+        <label class="field-text" for="message">Текст письма:</label>
+        <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="btn form-btn" type="submit">Отправить</button>
+    </form>
   </section>
 
 </body>
+
 </html>
