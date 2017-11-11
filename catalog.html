@@ -11,7 +11,7 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
 				<img class="main-header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии">
@@ -27,11 +27,11 @@
           <a class="main-navigation-link">Магазин</a>
         </li>
         <li class="main-navigation-item">
-          <a class="main-navigation-link" href="contects.html">Контакты</a>
+          <a class="main-navigation-link" href="contacts.html">Контакты</a>
         </li>
       </ul>
       <div class="header-basket">
-        <a class="header-basket-link" href="#">Корзина</a>
+        <a class="header-basket-link" href="bascket.html">Корзина</a>
       </div>
     </nav>
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
@@ -116,13 +116,10 @@
             <a class="sort-row-link" href="#">по названию</a>
           </li>
           <li class="sort-row-item sort-row-item__arrow sort-row-item__active">
-            <a class="sort-row-link sort-row-link__arrow">
-						  <span class="visually-hidden">вниз</span>
-						</a>
+            <a class="sort-row-link sort-row-link__arrow" aria-label="вниз"></a>
           </li>
           <li class="sort-row-item">
-            <a href="#" class="sort-row-link sort-row-link__arrow">
-						  <span class="visually-hidden">вверх</span>
+            <a href="#" class="sort-row-link sort-row-link__arrow" aria-label="вверх">
 						</a>
           </li>
         </ul>
@@ -229,17 +226,17 @@
     </div>
   </section>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="footer-btn footer-btn-wk" href="#">Вконтакте</a>
+          <a class="footer-btn footer-btn-wk" href="#" aria-label="Вконтакте"></a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-btn footer-btn-fb" href="#">Фейсбук</a>
+          <a class="footer-btn footer-btn-fb" href="#" aria-label="Фейсбук"></a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-btn footer-btn-inst" href="#">Инстаграмм</a>
+          <a class="footer-btn footer-btn-inst" href="#" aria-label="Инстаграмм"></a>
         </li>
       </ul>
     </section>
@@ -252,9 +249,7 @@
   </footer>
 
   <section class="modal-content">
-    <button class="modal-content-close" type="button">
-    <span class="visually-hidden">Закрыть</span>
-    </button>
+    <button class="modal-content-close" type="button" aria-label="Закрыть"></button>
     <h2 class="modal-content-title">Напишите нам</h2>
     <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
       <p class="form-action-field">
