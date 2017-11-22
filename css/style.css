@@ -1117,8 +1117,8 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 55px;
-  margin-top: -15px;
+  margin-bottom: 60px;
+  margin-top: -14px;
   list-style: none;
 }
 
@@ -1128,7 +1128,7 @@ img {
 
 .pagination-link {
 	display: block;
-	padding: 18px 21px;
+	padding: 18px 20px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1140,14 +1140,14 @@ img {
 }
 
 .pagination-link.pagination-link__active {
-	padding: 15px 18px;
+	padding: 15px 17px;
 	border: 3px solid #dbdbdb;
 	background-color: #fff;
 	border-radius: 5px;
 }
 
 .pagination-link.pagination-link__next {
-	padding: 18px 76px;
+	padding: 18px 78px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
