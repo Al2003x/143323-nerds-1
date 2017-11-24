@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="inner">
+<body>
 
   <header class="main-header">
     <div class="container">
@@ -37,12 +37,14 @@
           </li>
         </ul>
       </nav>
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </div>
   </header>
 
-  <main class="container">
-    <div class="main-wrapper">
+  <main>
+    <div class="page-title">
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+    </div>
+    <div class="main-wrapper container">
       <section class="catalog-form">
         <h2 class="visually-hidden">Форма заказа</h2>
         <form class="catalog-form" action="#" method="post">
@@ -58,7 +60,7 @@
               </div>
             </div>
             <div class="price-controls">
-              <label class="price-controls-label price-controls-label__min" for="min"> от <input class="price-controls-input" id="min" name="min-price" type="text" value="0"></label>
+              <label class="price-controls-label" for="min"> от <input class="price-controls-input" id="min" name="min-price" type="text" value="0"></label>
               <label class="price-controls-label price-controls-label__max" for="max">до <input class="price-controls-input" id="max" name="max-price" type="text" value="15 000"></label>
             </div>
           </fieldset>
@@ -194,16 +196,16 @@
         </div>
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-link__active">1</a>
+            <a class="btn btn-pagination-link btn-pagination-link__active">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="btn btn-pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="btn btn-pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-link__next" href="#">следующая</a>
+            <a class="btn btn-pagination-link btn-pagination-link__next" href="#">следующая</a>
           </li>
         </ul>
       </section>
@@ -233,7 +235,7 @@
         </li>
         <li class="footer-social-item">
           <a class="footer-btn" href="#" aria-label="Фейсбук">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
           </a>
         </li>
         <li class="footer-social-item">
@@ -245,14 +247,14 @@
     </section>
     <section class="friends">
       <h2 class="friends-title">Давайте дружить, это выгодно!</h2>
-      <p class="friends-text">
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+      <p class="friends-text">Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
 
   <section class="modal-content">
-    <button class="modal-content-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal-content-close" type="button" aria-label="Закрыть">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+    </button>
     <h2 class="modal-content-title">Напишите нам</h2>
     <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
       <p class="form-action-field">
