@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner">
 
   <header class="main-header">
     <div class="container">
@@ -47,7 +47,7 @@
     <div class="main-wrapper container">
       <section class="catalog-form">
         <h2 class="visually-hidden">Форма заказа</h2>
-        <form class="catalog-form" action="#" method="post">
+        <form class="catalog-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="catalog-form-fieldset catalog-form-fieldset__price">
             <legend class="catalog-form-inscription catalog-form-inscription__range">Стоимость:</legend>
             <div class="range-controls">
@@ -60,23 +60,23 @@
               </div>
             </div>
             <div class="price-controls">
-              <label class="price-controls-label" for="min"> от <input class="price-controls-input" id="min" name="min-price" type="text" value="0"></label>
-              <label class="price-controls-label price-controls-label__max" for="max">до <input class="price-controls-input" id="max" name="max-price" type="text" value="15 000"></label>
-            </div>
+              <label class="price-controls-label" for="min">от<input class="price-controls-input" id="min" name="min-price" type="text" value="0"></label>
+              <label class="price-controls-label price-controls-label__max" for="max">до<input class="price-controls-input" id="max" name="max-price" type="text" value="15 000"></label>
+            </div>  
           </fieldset>
           <fieldset class="catalog-form-fieldset">
             <legend class="catalog-form-inscription">Сетка:</legend>
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
-                <input class="visually-hidden field-radio-input" id="adaptive" type="radio" name="grid" value="adaptive" checked>
+                <input class="visually-hidden field-input field-radio-input" id="adaptive" type="radio" name="grid" value="adaptive" checked>
                 <label for="adaptive" class="field-radio-label">Адаптивная</label>
               </li>
               <li class="catalog-form-item">
-                <input class="visually-hidden field-radio-input" id="fixed" type="radio" name="grid" value="fixed">
+                <input class="visually-hidden field-input field-radio-input" id="fixed" type="radio" name="grid" value="fixed">
                 <label for="fixed" class="field-radio-label">Фиксированная</label>
               </li>
               <li class="catalog-form-item">
-                <input class="visually-hidden field-radio-input" id="grid" type="radio" name="grid" value="rubber">
+                <input class="visually-hidden field-input field-radio-input" id="grid" type="radio" name="grid" value="rubber">
                 <label for="grid" class="field-radio-label">Резиновая</label>
               </li>
             </ul>
@@ -85,23 +85,23 @@
             <legend class="catalog-form-inscription">Особенности:</legend>
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
-                <input class="visually-hidden field-checkbox-input" id="slider" type="checkbox" name="slider" checked>
+                <input class="visually-hidden field-input field-checkbox-input" id="slider" type="checkbox" name="slider" checked>
                 <label for="slider" class="field-checkbox-label">Слайдер</label>
               </li>
               <li class="catalog-form-item">
-                <input class="visually-hidden field-checkbox-input" id="advantage" type="checkbox" name="advantage block">
+                <input class="visually-hidden field-input field-checkbox-input" id="advantage" type="checkbox" name="advantage block">
                 <label for="advantage" class="field-checkbox-label">Блок преимуществ</label>
               </li>
               <li class="catalog-form-item">
-                <input class="visually-hidden field-checkbox-input" id="news" type="checkbox" name="news" checked>
+                <input class="visually-hidden field-input field-checkbox-input" id="news" type="checkbox" name="news" checked>
                 <label for="news" class="field-checkbox-label">Новости</label>
               </li>
               <li class="catalog-form-item">
-                <input class="visually-hidden field-checkbox-input" id="gallery" type="checkbox" name="gallery">
+                <input class="visually-hidden field-input field-checkbox-input" id="gallery" type="checkbox" name="gallery">
                 <label for="gallery" class="field-checkbox-label">Галерея</label>
               </li>
               <li class="catalog-form-item">
-                <input class="visually-hidden field-checkbox-input" id="basket" type="checkbox" name="basket">
+                <input class="visually-hidden field-input field-checkbox-input" id="basket" type="checkbox" name="basket">
                 <label for="basket" class="field-checkbox-label">Корзина</label>
               </li>
             </ul>
@@ -123,13 +123,13 @@
           </li>
           <li class="sort-row-item sort-row-item__arrow sort-row-item__active">
             <a class="sort-row-link sort-row-link__arrow" aria-label="вниз">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
-              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+            </a>
           </li>
           <li class="sort-row-item">
             <a href="#" class="sort-row-link sort-row-link__arrow" aria-label="вверх">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
-              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+            </a>
           </li>
         </ul>
         <div class="catalog-wrapper">
@@ -214,7 +214,7 @@
 
   <section class="map">
     <h2 class="visually-hidden">Карта</h2>
-    <!--    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d499.6505080846187!2d30.322857!3d59.9387456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sit!4v1494574703896" width="1440" height="416" style="border-width:1px" allowfullscreen></iframe>-->
+    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d499.6505080846187!2d30.322857!3d59.9387456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sit!4v1494574703896" width="1440" height="416" style="border-width:1px" allowfullscreen></iframe>
     <div class="container">
       <div class="contact">
         <h2 class="contact-title">NЁRDS DESIGN STUDIO</h2>
@@ -272,7 +272,7 @@
       <button class="btn form-btn" type="submit">Отправить</button>
     </form>
   </section>
-
+  <script src="js/index.js"></script>
 </body>
 
 </html>
